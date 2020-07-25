@@ -1,60 +1,66 @@
 import React from 'react';
 import './Menu.css';
 
+// importing icon and FontAwesomeIcon react component for the facebook link
+import { faFacebookF as facebook } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+/*
+  It would be nice to clean up the organization here. 
+  Migrating from bootstrap to Grid, maybe flexbox.
+    --Boyd
+*/
 export function Menu() {
   return (
-    <div className="menu_area">
-      <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div className="container">
-          <div className="navbar-header">
-            {/* FOR MOBILE VIEW COLLAPSED BUTTON */}
-            <button
-              type="button"
-              className="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#navbar"
-              aria-expanded="false"
-              aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+    <div className="container">
+      <div>
+        {/* FOR MOBILE VIEW COLLAPSED BUTTON */}
+        {/* This mobile part is not working, so for now it is being commented out... */}
+        {/* <button
+          type="button"
+          className="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar">
+          <span>Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button> */}
 
-            {/* LOGO */}
+        {/* TEXT BASED LOGO */}
+        <a className="text-logo" href="#">
+          UF <span style={{ color: '#2DA2C8' }}>IEEE</span>
+        </a>
+      </div>
 
-            {/* TEXT BASED LOGO */}
-            <a className="navbar-brand" href="#">
-              UF <span>IEEE</span>
-            </a>
-          </div>
-          <div id="navbar" className="navbar-collapse collapse">
-            <ul id="top-menu" className="nav navbar-nav navbar-right main_nav">
-              <li className="active">
-                <a href="http://ieee.ece.ufl.edu/#">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#team">Team</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <a
-                  type="_blank"
-                  href="https://www.facebook.com/UFIEEE"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i className="fa fa-facebook"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      {/* empty div to consume a grid cell; see Menu.css (.container --> grid-template-areas --> '.') */}
+      <div></div>
+
+      {/* PAGE SECTION LINKS */}
+      <div className="links">
+        <a className="link-home" href="http://ieee.ece.ufl.edu/#">
+          Home
+        </a>
+        <a className="link-about" href="#about">
+          About
+        </a>
+        <a className="link-team" href="#team">
+          Team
+        </a>
+        <a className="link-contact" href="#contact">
+          Contact
+        </a>
+        <a
+          className="link-fb"
+          type="_blank"
+          href="https://www.facebook.com/UFIEEE"
+          target="_blank"
+          rel="noopener noreferrer">
+          <FontAwesomeIcon icon={facebook} />
+        </a>
+      </div>
     </div>
   );
 }

@@ -3,67 +3,157 @@ import './Contact.css';
 
 export function Contact() {
   return (
-    <section id="contact">
+    <div>
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12">
-            {/* <!-- START CONTACT HEADING --> */}
             <div className="heading">
-              <h2 className="wow fadeInLeftBig">Subscribe</h2>
-              <p>
-                Want to get involved? Subscribe to our email listserv!
-                <br />
-                Also, subscribe to our calendar for up-to-date events and
-                advising office hours.
-                <li>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bhavana
-                  &mdash; T, R | 1:55 pm - 2:45 pm
-                </li>
-                <li>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lauren
-                  &mdash; M, W | 10:40 am - 11:30 am
-                </li>
-                <li>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Andrew
-                  &mdash; W, F | 9:35 am - 10:25 am
-                </li>
-                <li>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Daniel
-                  &mdash; T | 11:45 am - 1:40 pm
-                </li>
-              </p>
+              <h2 className="wow fadeInLeftBig">Sponsors</h2>
+              <section id="sponsorFeature">
+                {/* <!-- SKILLS COUNTER OVERLAY --> */}
+                <div className="heading">
+                  <div className="row">
+                    <div className="col-lg-12 col-md-12">
+                      <div className="container">
+                        <div className="contact_feature">
+                          {/* <!-- BEGIN CALL US FEATURE --> */}
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div className="single_contact_feaured wow fadeInUp">
+                              <a href="https://www.ti.com" target="_blank">
+                                <img
+                                  src="img/misc/ti_logo.png"
+                                  height="150"
+                                  width="150"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          {/* <!-- BEGIN EMAIL ADDRESS FEATURE --> */}
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div className="single_contact_feaured wow fadeInUp">
+                              <a href="https://www.chevron.com" target="_blank">
+                                <img
+                                  src="img/misc/Chevron_Logo.jpg"
+                                  height="150"
+                                  width="150"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          {/* <!-- BEGIN OFFICE LOCATION FEATURE --> */}
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div className="single_contact_feaured wow fadeInUp">
+                              <a href="https://www.intel.com" target="_blank">
+                                <img
+                                  src="img/misc/intel_logo.svg"
+                                  height="150"
+                                  width="150"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div className="single_contact_feaured wow fadeInUp">
+                              <a href="https://www.harris.com" target="_blank">
+                                <img
+                                  src="img/misc/harris_corporation.svg"
+                                  height="150"
+                                  width="150"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div className="single_contact_feaured wow fadeInUp">
+                              <a href="http://www.mosaicco.com" target="_blank">
+                                <img
+                                  src="img/misc/mosaic.png"
+                                  height="150"
+                                  width="150"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div className="single_contact_feaured wow fadeInUp">
+                              <a
+                                href="https://gatorrentals.com/apartments-near-uf"
+                                target="_blank">
+                                <img
+                                  src="img/gator_rentals.png"
+                                  height="150"
+                                  width="150"
+                                />{' '}
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       </div>
-      <div className="row">
-        {/* <!-- BEGIN CONTACT CONTENT --> */}
-        <div className="contact_content">
-          {/* <!-- BEGIN CONTACT FORM --> */}
-          <div className="col-lg-12 col-md-12 col-sm-12">
-            <div className="contact_form">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfiR1uh3NMe4u_e3q6UHPE31gV0zpJh5RKZ0P0PdbFn_df0Ow/viewform?embedded=true"
-                width="500"
-                height="600"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                scrolling="no">
-                Loading...
-              </iframe>
 
-              <iframe
-                src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=uf.ieee%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York"
-                style={{ borderWidth: 0 }}
-                width="600"
-                height="600"
-                frameborder="0"
-                scrolling="no"></iframe>
+      <section id="contactFeature">
+        {/* <!-- SKILLS COUNTER OVERLAY --> */}
+        <div className="slider_overlay"></div>
+        <div className="row">
+          <div className="col-lg-12 col-md-12">
+            <div className="container">
+              <div className="contact_feature">
+                {/* <!-- BEGIN CALL US FEATURE --> */}
+                <div className="col-lg-3 col-md-3 col-sm-6">
+                  <div className="single_contact_feaured wow fadeInUp">
+                    <i className="fa fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <p>(352) 392-0949</p>
+                  </div>
+                </div>
+                {/* <!-- BEGIN EMAIL ADDRESS FEATURE --> */}
+                <div className="col-lg-3 col-md-3 col-sm-6">
+                  <div className="single_contact_feaured wow fadeInUp">
+                    <i className="fa fa-envelope-o"></i>
+                    <h4>Email Address</h4>
+                    <p>ieee@ece.ufl.edu</p>
+                  </div>
+                </div>
+                {/* <!-- BEGIN OFFICE LOCATION FEATURE --> */}
+                <div className="col-lg-3 col-md-3 col-sm-6">
+                  <div className="single_contact_feaured wow fadeInUp">
+                    <i className="fa fa-map-marker"></i>
+                    <h4>Office Location</h4>
+                    <p>
+                      New Engineering Building 213
+                      <br />
+                      {/* <!-- Gainesville, FL 32611 --> */}
+                    </p>
+                  </div>
+                </div>
+                {/* <!-- BEGIN ADVISING HOURS FEATURE --> */}
+                <div className="col-lg-3 col-md-3 col-sm-6">
+                  <div className="single_contact_feaured wow fadeInUp">
+                    <i className="fa fa-clock-o"></i>
+                    <h4>Advising Hours</h4>
+                    <p>
+                      <a href="#about" style={{ color: '#888888' }}>
+                        Click here for the advising schedule
+                      </a>
+                    </p>
+
+                    <p>
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

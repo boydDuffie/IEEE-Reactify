@@ -1,45 +1,14 @@
 import React from 'react';
 import './EventSlider.css';
-
-/*
-  This section below is a temporary fix
-  Once the slide itself is made into its own component, the image paths will be stored in their own file
-*/
-//IMG SRCs:
-const videoCall = require('../../img/misc/video_call.jpg');
+import { Event } from '../Event/Event';
 
 export function EventSlider() {
   return (
-    <div className="slider_area">
-      <div id="slides">
-        <ul className="slides-container" id="clubEvents">
+    <div>
+      <div>
+        <ul>
           {/* TODO: make a slide component which returns a list item for when there are multiple events on the slider --Boyd */}
-          <li>
-            <div className="slider_overlay"></div>
-            <img src={videoCall} alt="game night july 26th" />
-            <div className="slider_caption">
-              <h2>
-                <a
-                  href="https://www.facebook.com/events/1113278472406035/"
-                  target="_blank"
-                  className="myLink">
-                  ECE Student Orgs Virtual Game Night
-                </a>
-              </h2>
-              <p>
-                July 26
-                <br />
-                7:00 pm - 10:00 pm
-                <br />
-                <a
-                  href="https://ufl.zoom.us/j/4480710273"
-                  target="_blank"
-                  className="myLink">
-                  <u>Zoom Link</u>
-                </a>
-              </p>
-            </div>
-          </li>
+          <Event />
         </ul>
         {/* <script type="text/javascript">getEvents();</script> */}
 

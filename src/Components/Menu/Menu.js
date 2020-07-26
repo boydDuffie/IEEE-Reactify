@@ -17,17 +17,17 @@ export function Menu() {
         {/* FOR MOBILE VIEW COLLAPSED BUTTON */}
         {/* This mobile part is not working, so for now it is being commented out... */}
         {/* <button
-          type="button"
-          className="navbar-toggle collapsed"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-expanded="false"
-          aria-controls="navbar">
-          <span>Toggle navigation</span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button> */}
+        type="button"
+        className="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-expanded="false"
+        aria-controls="navbar">
+        <span>Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> */}
 
         {/* TEXT BASED LOGO */}
         <a className="text-logo" href="#">

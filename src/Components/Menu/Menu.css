@@ -7,8 +7,7 @@
   grid-template-columns: 15% auto 30%;
   grid-template-rows: auto;
   grid-template-areas: 'logo . links';
-  margin: 20px 0px;
-  padding: 12px 0px;
+  padding: 32px 0px;
 }
 
 /* Styling the text logo */

@@ -7,7 +7,6 @@ export function EventSlider() {
     <div>
       <div>
         <ul>
-          {/* TODO: make a slide component which returns a list item for when there are multiple events on the slider --Boyd */}
           <Event />
         </ul>
         {/* <script type="text/javascript">getEvents();</script> */}

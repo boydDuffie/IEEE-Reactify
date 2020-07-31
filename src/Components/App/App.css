@@ -2,7 +2,9 @@
   display: grid;
   grid-template-columns: 20% 1fr 20%;
   grid-template-rows: auto;
-  grid-template-areas: 'slider slider slider';
+  grid-template-areas:
+    '. . .'
+    '. slider .';
   gap: 3px;
 }
 

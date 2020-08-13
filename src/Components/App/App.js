@@ -12,11 +12,7 @@ import { Footer } from '../Footer/Footer';
 function App() {
   return (
     <div>
-      <div className="top-layer">
-        <div></div>
-        <Menu className="menu" />
-        <div></div>
-      </div>
+      <Menu className="menu" />
       <div className="App">
         {/* empty divs are to 'fill' empty cells (for Grid) */}
         {/* see this link if you're confused about grid areas: https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas */}

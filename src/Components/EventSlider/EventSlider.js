@@ -1,32 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './EventSlider.css';
-import { Event } from '../Event/Event';
+import { Events } from '../Events/Events';
+import { EventList as eventList } from '../Events/EventList';
 
 export function EventSlider() {
-  return (
-    <div>
-      <div>
-        <ul>
-          {/* TODO: make a slide component which returns a list item for when there are multiple events on the slider --Boyd */}
-          <Event />
-        </ul>
-        {/* <script type="text/javascript">getEvents();</script> */}
+  //STATES
+  const [activeIndex, setActiveIndex] = useState(0);
 
-        <nav className="slides-navigation">
-          <a className="prev" href="/item1">
-            <span className="icon-wrap"></span>
-          </a>
-          <h3>
-            <strong>Prev</strong>
-          </h3>
-          <a className="next" href="/item3">
-            <span className="icon-wrap"></span>
-          </a>
-          <h3>
-            <strong>Next</strong>
-          </h3>
-        </nav>
-      </div>
+  //EFFECTS & LIFETIME CYCLE STUFF
+  useEffect(() => {
+    const id = setTimeout(() => next(), 4000);
+    return () => clearTimeout(id);
+  }, [activeIndex]);
+
+  const next = () => {
+    setActiveIndex((activeIndex + 1) % eventList.length);
+  };
+
+  const prev = () => {
+    setActiveIndex((activeIndex + eventList.length - 1) % eventList.length);
+  };
+
+  //RENDER
+  return (
+    <div className="slider">
+      <Events activeIndex={activeIndex} prev={prev} next={next} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Menu.css';
 
 // importing icon and FontAwesomeIcon react component for the facebook link
@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export function Menu() {
   return (
     <div className="container">
-      <div>
+      <div className="text-logo">
         {/* FOR MOBILE VIEW COLLAPSED BUTTON */}
         {/* This mobile part is not working, so for now it is being commented out... */}
         {/* <button
@@ -30,7 +30,7 @@ export function Menu() {
       </button> */}
 
         {/* TEXT BASED LOGO */}
-        <a className="text-logo" href="#">
+        <a href="#">
           UF <span style={{ color: '#2DA2C8' }}>IEEE</span>
         </a>
       </div>
@@ -40,7 +40,7 @@ export function Menu() {
 
       {/* PAGE SECTION LINKS */}
       <div className="links">
-        <a className="link-home" href="http://ieee.ece.ufl.edu/#">
+        <a className="link-home" href="#">
           Home
         </a>
         <a className="link-about" href="#about">

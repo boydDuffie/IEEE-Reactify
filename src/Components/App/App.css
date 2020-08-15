@@ -1,28 +1,16 @@
 .App {
-  display: grid;
-  grid-template-columns: 20% 1fr 20%;
-  grid-template-rows: auto;
-  grid-template-areas: 'slider slider slider';
-  gap: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
 }
 
-.top-layer {
-  display: grid;
-  grid-template-columns: 20% 1fr 20%;
-  grid-template-rows: auto;
-  grid-template-areas: '. menu .';
-  width: 100%;
-  position: fixed;
+a {
+  text-decoration: none;
 }
 
-.top-layer > div {
-  background-color: #000000cc;
-}
-
-.menu {
-  grid-area: menu;
-}
-
-.slider {
-  grid-area: slider;
+ul {
+  padding-inline-start: 0;
+  margin-block: 0;
 }

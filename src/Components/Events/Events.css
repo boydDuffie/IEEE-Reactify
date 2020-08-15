@@ -1,0 +1,94 @@
+.events-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 51;
+}
+
+.active {
+  display: grid;
+  grid-template-columns: 25vw 50vw 25vw;
+  grid-template-rows: auto;
+  grid-template-areas: 'leftArr caption rightArr';
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 46;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+}
+
+.slider-caption {
+  grid-area: 'caption';
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inactive {
+  display: none;
+}
+
+.slider-caption * {
+  color: white;
+}
+
+.active > div {
+  background: rgba(36, 36, 52, 0.8);
+}
+
+a.event-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 8vmin;
+  text-align: center;
+  display: inline-block;
+}
+
+a.event-title:hover {
+  color: #2da2c8;
+}
+
+.active p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 2.5vmin;
+  font-weight: bold;
+}
+
+.meeting-link:hover {
+  color: #2da2c8;
+}
+
+.left-arrow {
+  grid-area: 'leftArr';
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 6vmin;
+  color: white;
+  height: 100vh;
+  padding-left: 2vw;
+}
+
+.right-arrow {
+  grid-area: 'rightArr';
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 6vmin;
+  color: white;
+  height: 100vh;
+  padding-right: 2vw;
+}
+
+.left-arrow-icon:hover,
+.right-arrow-icon:hover {
+  cursor: pointer;
+  color: #2da2c8;
+}

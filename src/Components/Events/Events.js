@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './Events.css';
 import { EventList as events } from './EventList';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChevronLeft as leftArr,
+  faChevronRight as rightArr,
+} from '@fortawesome/free-solid-svg-icons';
 
 export const Events = (props) => {
   return (
@@ -11,7 +16,13 @@ export const Events = (props) => {
           style={{
             backgroundImage: `url('${event.img.src}')`,
           }}>
-          <div></div>
+          <div className="left-arrow">
+            {events.length > 1 ? (
+              <FontAwesomeIcon icon={leftArr} onClick={props.prev} />
+            ) : (
+              <div style={{ display: 'none' }}></div>
+            )}
+          </div>
           <div className="slider-caption">
             <h2>
               <a href={event.signUp} target="_blank" className="event-title">
@@ -32,7 +43,13 @@ export const Events = (props) => {
               )}
             </p>
           </div>
-          <div></div>
+          <div className="right-arrow">
+            {events.length > 1 ? (
+              <FontAwesomeIcon icon={rightArr} onClick={props.next} />
+            ) : (
+              <div style={{ display: 'none' }}></div>
+            )}
+          </div>
         </div>
       ))}
     </section>

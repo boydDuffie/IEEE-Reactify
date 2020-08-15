@@ -2,14 +2,14 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  z-index: 45;
+  z-index: 51;
 }
 
 .active {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 25vw 50vw 25vw;
   grid-template-rows: auto;
-  grid-template-areas: '. caption .';
+  grid-template-areas: 'leftArr caption rightArr';
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -62,4 +62,28 @@ a.event-title:hover {
 
 .meeting-link:hover {
   color: #2da2c8;
+}
+
+.left-arrow {
+  grid-area: 'leftArr';
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 6vmin;
+  color: white;
+  height: 100vh;
+  padding-left: 2vw;
+}
+
+.right-arrow {
+  grid-area: 'rightArr';
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 6vmin;
+  color: white;
+  height: 100vh;
+  padding-right: 2vw;
 }

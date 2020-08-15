@@ -6,11 +6,60 @@
 }
 
 .active {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: '. caption .';
   height: 100vh;
   width: 100vw;
+  position: relative;
+  z-index: 46;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+}
+
+.slider-caption {
+  grid-area: 'caption';
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .inactive {
   display: none;
+}
+
+.slider-caption * {
+  color: white;
+}
+
+.active > div {
+  background: rgba(36, 36, 52, 0.8);
+}
+
+a.event-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 8vmin;
+  text-align: center;
+  display: inline-block;
+}
+
+a.event-title:hover {
+  color: #2da2c8;
+}
+
+.active p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 2.5vmin;
+  font-weight: bold;
+}
+
+.meeting-link:hover {
+  color: #2da2c8;
 }

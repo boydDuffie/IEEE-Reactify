@@ -9,9 +9,5 @@ export function EventSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   //RENDER
-  return (
-    <div>
-      <Events activeIndex={activeIndex} />
-    </div>
-  );
+  return <Events activeIndex={activeIndex} />;
 }

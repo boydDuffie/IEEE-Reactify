@@ -11,13 +11,11 @@ export const Events = (props) => {
           style={{
             backgroundImage: `url('${event.img.src}')`,
           }}>
-          <div>
-            {/* <img src={require(event.img.src)} alt={event.img.alt} /> */}
-          </div>
+          <div></div>
           <div className="slider-caption">
             <h2>
-              <a href={event.signUp} target="_blank" className="myLink">
-                {event.title}
+              <a href={event.signUp} target="_blank" className="event-title">
+                {event.title.toUpperCase()}
               </a>
             </h2>
             <p>
@@ -26,14 +24,15 @@ export const Events = (props) => {
               {`${event.date.startTime} - ${event.date.endTime}`}
               <br />
               {event.virtual ? (
-                <a href={event.meetingLink} target="_blank" className="myLink">
-                  <u>Meeting Link</u>
+                <a href={event.meetingLink} target="_blank">
+                  <u className="meeting-link">Meeting Link</u>
                 </a>
               ) : (
                 <div>{`${event.location.address} ${event.location.building}-${event.location.room}`}</div>
               )}
             </p>
           </div>
+          <div></div>
         </div>
       ))}
     </section>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Menu.css';
 
 // importing icon and FontAwesomeIcon react component for the facebook link

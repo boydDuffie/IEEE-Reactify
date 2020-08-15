@@ -12,7 +12,7 @@ export const Events = (props) => {
             backgroundImage: `url('${event.img.src}')`,
           }}>
           <div>
-            <img src={require(event.img.src)} alt={event.img.alt} />
+            {/* <img src={require(event.img.src)} alt={event.img.alt} /> */}
           </div>
           <div className="slider-caption">
             <h2>

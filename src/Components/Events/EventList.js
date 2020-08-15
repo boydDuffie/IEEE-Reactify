@@ -1,9 +1,12 @@
+// For now, the process of adding a new event will require someone to fill out a new object in this EventList array.
+// It is very important to use require() on the img.src value, because otherwise it will not display the image when rendering events in the Events component (see Events.js).
+
 export const EventList = [
   {
     virtual: true,
     title: 'ECE Student Orgs Virtual Game Night',
     img: {
-      src: './event-img/video_call.jpg',
+      src: require('./event-img/video_call.jpg'),
       alt: 'game night july 26th',
     },
     signUp: 'https://www.facebook.com/events/1113278472406035/',
@@ -24,7 +27,7 @@ export const EventList = [
     virtual: false,
     title: 'Test Event',
     img: {
-      src: './event-img/video_call.jpg',
+      src: require('./event-img/video_call.jpg'),
       alt: 'game night july 26th',
     },
     signUp: 'https://www.facebook.com/events/1113278472406035/',

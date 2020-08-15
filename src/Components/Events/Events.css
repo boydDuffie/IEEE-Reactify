@@ -86,3 +86,9 @@ a.event-title:hover {
   height: 100vh;
   padding-right: 2vw;
 }
+
+.left-arrow-icon:hover,
+.right-arrow-icon:hover {
+  cursor: pointer;
+  color: #2da2c8;
+}

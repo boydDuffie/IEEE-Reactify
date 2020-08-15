@@ -4,44 +4,23 @@
 export const EventList = [
   {
     virtual: true,
-    title: 'ECE Student Orgs Virtual Game Night',
+    title: 'Virtual Texas Instruments Resume Workshop',
     img: {
-      src: require('./event-img/video_call.jpg'),
-      alt: 'game night july 26th',
+      src: require('./event-img/resume_review.jpg'),
+      alt: 'resume review workshop',
     },
-    signUp: 'https://www.facebook.com/events/1113278472406035/',
+    signUp: 'https://www.facebook.com/UFIEEE',
     date: {
-      month: 'July',
-      day: '26',
-      startTime: '7:00 pm',
-      endTime: '10:00 pm',
+      month: 'September',
+      day: '3',
+      startTime: '6:00 pm',
+      endTime: '7:30 pm',
     },
     location: {
       building: null,
       room: null,
       address: null,
     },
-    meetingLink: 'https://ufl.zoom.us/j/4480710273',
-  },
-  {
-    virtual: false,
-    title: 'Test Event',
-    img: {
-      src: require('./event-img/video_call.jpg'),
-      alt: 'game night july 26th',
-    },
-    signUp: 'https://www.facebook.com/events/1113278472406035/',
-    date: {
-      month: 'July',
-      day: '26',
-      startTime: '7:00 pm',
-      endTime: '10:00 pm',
-    },
-    location: {
-      building: 'test',
-      room: 'test',
-      address: 'test',
-    },
-    meetingLink: 'https://ufl.zoom.us/j/4480710273',
+    meetingLink: 'https://ufl.zoom.us/j/95460634480',
   },
 ];

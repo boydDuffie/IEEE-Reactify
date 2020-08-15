@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './EventSlider.css';
 import { Events } from '../Events/Events';
 import { EventList as eventList } from '../Events/EventList';
-import { SliderBubbles } from '../SliderBubbles/SliderBubbles';
 
 export function EventSlider() {
   //STATES
@@ -26,10 +25,6 @@ export function EventSlider() {
   return (
     <div className="slider">
       <Events activeIndex={activeIndex} prev={prev} next={next} />
-      <SliderBubbles
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
-      />
     </div>
   );
 }

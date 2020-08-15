@@ -1,31 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './EventSlider.css';
-import { Event } from '../Event/Event';
+import { Events } from '../Events/Events';
+
+const eventList = require('../Events/EventList');
 
 export function EventSlider() {
+  //STATES
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  //RENDER
   return (
     <div>
-      <div>
-        <ul>
-          <Event />
-        </ul>
-        {/* <script type="text/javascript">getEvents();</script> */}
-
-        <nav className="slides-navigation">
-          <a className="prev" href="/item1">
-            <span className="icon-wrap"></span>
-          </a>
-          <h3>
-            <strong>Prev</strong>
-          </h3>
-          <a className="next" href="/item3">
-            <span className="icon-wrap"></span>
-          </a>
-          <h3>
-            <strong>Next</strong>
-          </h3>
-        </nav>
-      </div>
+      <Events activeIndex={activeIndex} />
     </div>
   );
 }

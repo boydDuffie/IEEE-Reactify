@@ -40,7 +40,7 @@ export function Menu() {
 
       {/* PAGE SECTION LINKS */}
       <div className="links">
-        <a className="link-home" href="http://ieee.ece.ufl.edu/#">
+        <a className="link-home" href="#">
           Home
         </a>
         <a className="link-about" href="#about">

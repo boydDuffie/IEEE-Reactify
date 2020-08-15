@@ -1,0 +1,16 @@
+.events-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 45;
+}
+
+.active {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+.inactive {
+  display: none;
+}

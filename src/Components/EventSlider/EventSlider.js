@@ -24,7 +24,12 @@ export function EventSlider() {
   //RENDER
   return (
     <div className="slider">
-      <Events activeIndex={activeIndex} prev={prev} next={next} />
+      <Events
+        activeIndex={activeIndex}
+        prev={prev}
+        next={next}
+        setActiveIndex={setActiveIndex}
+      />
     </div>
   );
 }

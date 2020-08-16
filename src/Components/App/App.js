@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="App">
       {/* TODO: make the menu transition from transparent bg to semi-transparent bg */}
-      <Menu className="menu" />
+      <Menu />
       <EventSlider />
-      {/* <About />
-        <Team />
+      <About />
+      {/* <Team />
         <Subscribe />
         <Sponsors />
         <Contact />

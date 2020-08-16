@@ -18,14 +18,12 @@ export const Events = (props) => {
             backgroundImage: `url('${event.img.src}')`,
           }}>
           <div className="left-arrow">
-            {events.length > 1 ? (
+            {events.length > 1 && (
               <FontAwesomeIcon
                 icon={leftArr}
                 onClick={props.prev}
                 className="left-arrow-icon"
               />
-            ) : (
-              <div style={{ display: 'none' }}></div>
             )}
           </div>
           <div className="slider-caption">
@@ -47,24 +45,20 @@ export const Events = (props) => {
                 <div>{`${event.location.address} ${event.location.building}-${event.location.room}`}</div>
               )}
             </p>
-            {events.length > 1 ? (
+            {events.length > 1 && (
               <SliderBubbles
                 activeIndex={props.activeIndex}
                 setActiveIndex={props.setActiveIndex}
               />
-            ) : (
-              <div style={{ display: 'none' }}></div>
             )}
           </div>
           <div className="right-arrow">
-            {events.length > 1 ? (
+            {events.length > 1 && (
               <FontAwesomeIcon
                 icon={rightArr}
                 onClick={props.next}
                 className="left-arrow-icon"
               />
-            ) : (
-              <div style={{ display: 'none' }}></div>
             )}
           </div>
         </div>

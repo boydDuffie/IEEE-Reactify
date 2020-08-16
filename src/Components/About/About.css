@@ -1,0 +1,22 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 'sections images';
+}
+
+.about-sections {
+  grid-area: 'sections';
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-image-slider {
+  grid-area: 'images';
+}
+
+.margin {
+  grid-area: 'margin';
+}
